@@ -1,13 +1,23 @@
 package com.attentionandfocuscoaching;
 
 import java.util.Properties;
-import java.io.*;
-import java.util.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.mail.*;
-import javax.mail.internet.*;
-import javax.activation.*;
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServlet;
+import javax.mail.Session;
+import javax.mail.Authenticator;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.InternetAddress;
+import javax.mail.Multipart;
+import javax.mail.BodyPart;
+import javax.sql.DataSource;
+import javax.activation.FileDataSource;
+import javax.activation.DataHandler;
+import javax.mail.Transport;
+import javax.mail.internet.MimeMessage;
+import java.net.PasswordAuthentication;
 
 /**
 * Class for sending emails to clients of website.
